@@ -1,0 +1,16 @@
+<Page loaded="pageLoaded" xmlns="http://www.nativescript.org/tns.xsd">
+
+    <!-- ⬇️ ⬇️ ⬇️ YOUR CODE BEGINS HERE ⬇️ ⬇️ ⬇️ -->
+
+    <ActionBar title="Kelloggram"></ActionBar>
+
+    <ListView items="{{ posts }}" class="h-full">
+        <ListView.itemTemplate>
+            <StackLayout>
+                <Label text="{{ username }}" class="text-3xl" />
+                <Image src="{{ imageUrl }}" width="400" height="400" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+    <!-- ⬆️ ⬆️ ⬆️ YOUR CODE ENDS HERE ⬆️ ⬆️ ⬆️ -->
+</Page>

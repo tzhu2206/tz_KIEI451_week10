@@ -1,0 +1,17 @@
+<Page loaded="pageLoaded" xmlns="http://www.nativescript.org/tns.xsd">
+
+    <!-- ⬇️ ⬇️ ⬇️ YOUR CODE BEGINS HERE ⬇️ ⬇️ ⬇️ -->
+
+    <ActionBar title="Kelloggram"></ActionBar>
+
+    <ListView items="{{ posts }}" class="h-full">
+        <ListView.itemTemplate>
+            <FlexboxLayout flexDirection="row">
+                <Image src="{{ imageUrl }}" class="thumb img-circle" />
+                <Label text="{{ username }}" class="t-12"
+                    verticalAlignment="center" style="width: 60%" />
+            </FlexboxLayout>
+        </ListView.itemTemplate>
+    </ListView>
+    <!-- ⬆️ ⬆️ ⬆️ YOUR CODE ENDS HERE ⬆️ ⬆️ ⬆️ -->
+</Page>
